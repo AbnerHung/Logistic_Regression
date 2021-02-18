@@ -23,4 +23,4 @@ y_t = y[1500:2000, :]
 y = y[0:1499, :]
 ```
 ## 定义sigmoid函数
-！[sigmoid] (https://cdn.nlark.com/yuque/0/2020/png/514680/1605181164656-bbbfa3ea-0c5c-4036-9c4e-3cdd732d3391.png)
+![sigmoid](https://cdn.nlark.com/yuque/0/2020/png/514680/1605181164656-bbbfa3ea-0c5c-4036-9c4e-3cdd732d3391.png)
