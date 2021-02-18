@@ -42,6 +42,7 @@ def model(x,theta):
 ## 定义损失函数
 逻辑回归使用二分交叉熵损失
 > Out = -1 * weight * (label * log(input) + (1 - label) * log(1 - input))
+ 
 使用numpy矩阵乘法等操作可以实现：
 ```python
 def cost(x, y, theta):
