@@ -22,10 +22,18 @@ y_t = y[1500:2000, :]
 y = y[0:1499, :]
 ```
 ## 定义sigmoid函数
-sigmoid函数如下图：
+sigmoid函数如图：
 ![sigmoid](https://cdn.nlark.com/yuque/0/2020/png/514680/1605181164656-bbbfa3ea-0c5c-4036-9c4e-3cdd732d3391.png "sigmoid")
 使用numpy实现：
 ```python
 def sigmoid(x):
     return (1/ (1+ np.exp(-x )))
+```
+## 定义model函数
+model返回预测结果，如下图示
+![model](https://upload-images.jianshu.io/upload_images/13424818-640c2e30f5c40eb4.png?imageMogr2/auto-orient/strip|imageView2/2/w/474/format/webp "demo")
+返回X张量乘以\theta的转置，代码如下
+```python
+def model(x,theta):
+    return sigmoid(np.dot(x,theta.T))
 ```
