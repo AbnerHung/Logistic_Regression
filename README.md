@@ -31,8 +31,10 @@ def sigmoid(x):
 ```
 ## 定义model函数
 model返回预测结果，如下图示 
-![model](https://upload-images.jianshu.io/upload_images/13424818-640c2e30f5c40eb4.png?imageMogr2/auto-orient/strip|imageView2/2/w/474/format/webp "demo")
-返回X张量乘以/theta的转置，代码如下
+ 
+![model](https://upload-images.jianshu.io/upload_images/13424818-640c2e30f5c40eb4.png?imageMogr2/auto-orient/strip|imageView2/2/w/474/format/webp "demo") 
+
+返回X张量乘以theta的转置，代码如下
 ```python
 def model(x,theta):
     return sigmoid(np.dot(x,theta.T))
