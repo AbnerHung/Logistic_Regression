@@ -39,3 +39,14 @@ model返回预测结果，如下图示
 def model(x,theta):
     return sigmoid(np.dot(x,theta.T))
 ```
+## 定义损失函数
+逻辑回归使用二分交叉熵损失
+> Out = -1 * weight * (label * log(input) + (1 - label) * log(1 - input))
+使用numpy矩阵乘法等操作可以实现：
+```python
+def cost(x, y, theta):
+    left = np.multiply(-y, np.log(model(x, theta)))
+    right = np.multiply((1 - y), np.log(1 - model(x, theta)))
+    num = len(x)
+    return (np.sum(left - right) / num)
+```
